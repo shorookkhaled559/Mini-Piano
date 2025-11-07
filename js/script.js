@@ -19,6 +19,7 @@ const black_key = document.querySelectorAll(".black-key");
 white_key.forEach((key) => {
   key.addEventListener("click", () => {
     let audio = new Audio(sounds[`${key.id}`]);
+    console.log(sounds[`${key.id}`])
     audio.currentTime = 0;
     audio.play();
   });
@@ -26,6 +27,7 @@ white_key.forEach((key) => {
 black_key.forEach((key) => {
   key.addEventListener("click", () => {
     let audio = new Audio(sounds[`${key.id}`]);
+    console.log(sounds[`${key.id}`])
     audio.currentTime = 0;
     audio.play();
   });
