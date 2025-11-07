@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Piano</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="flex w-full flex-col items-center justify-center h-screen bg-gradient-to-br from-[#0a0e1a] via-[#1a1d2e] to-[#2a2d3e]"
+    >
+      <div class="flex flex-col items-center gap-12">
+        <span class="text-heading-1 font-heading-1 text-white">Mini Piano</span>
+        <div
+          class="flex flex-col items-center gap-8 rounded-2xl px-12 py-8 shadow-[0px_25px_50px_-12px_#000000ff] bg-gradient-to-b from-[#2a1810] to-[#1a1008]"
+        >
+          <div class="flex items-start relative">
+            <div class="flex items-end">
+              <div id="C"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >C</span
+                >
+              </div>
+              <div id="D"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >D</span
+                >
+              </div>
+              <div id="E"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >E</span
+                >
+              </div>
+              <div id="F"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >F</span
+                >
+              </div>
+              <div id="G"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >G</span
+                >
+              </div>
+              <div id="A"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >A</span
+                >
+              </div>
+              <div id="B"
+                class="white-key flex h-64 w-20 flex-none flex-col items-center justify-end rounded-b-lg border border-solid border-neutral-200 cursor-pointer bg-gradient-to-b from-[#fefefe] via-[#f9f9f9] to-[#f0f0f0] transition-all hover:from-[#fffef8] hover:via-[#fffef0] hover:to-[#fffce8] active:from-[#fef9e8] active:via-[#fef6d8] active:to-[#fee8c0]"
+              >
+                <span
+                  class="text-body-bold font-body-bold text-neutral-700 pb-3"
+                  >B</span
+                >
+              </div>
+            </div>
+
+            <div class="flex items-start absolute left-[60px] top-0">
+              <div id="C#"
+                class="black-key flex h-40 w-12 flex-none flex-col items-center justify-end rounded-b-md cursor-pointer bg-gradient-to-b from-[#1a1a1a] via-[#0a0a0a] to-[#000000] transition-all hover:from-[#2a2a2a] hover:via-[#1a1a1a] hover:to-[#0a0a0a] active:from-[#0a0a0a] active:via-[#050505] active:to-[#000000]"
+              >
+                <span
+                  class="text-caption-bold font-caption-bold text-white pb-2"
+                  >C#</span
+                >
+              </div>
+              <div id="D#"
+                class="black-key flex h-40 w-12 flex-none flex-col items-center justify-end rounded-b-md ml-8 cursor-pointer bg-gradient-to-b from-[#1a1a1a] via-[#0a0a0a] to-[#000000] transition-all hover:from-[#2a2a2a] hover:via-[#1a1a1a] hover:to-[#0a0a0a] active:from-[#0a0a0a] active:via-[#050505] active:to-[#000000]"
+              >
+                <span
+                  class="text-caption-bold font-caption-bold text-white pb-2"
+                  >D#</span
+                >
+              </div>
+              <div id="F#"
+                class="black-key flex h-40 w-12 flex-none flex-col items-center justify-end rounded-b-md ml-[76px] cursor-pointer bg-gradient-to-b from-[#1a1a1a] via-[#0a0a0a] to-[#000000] transition-all hover:from-[#2a2a2a] hover:via-[#1a1a1a] hover:to-[#0a0a0a] active:from-[#0a0a0a] active:via-[#050505] active:to-[#000000]"
+              >
+                <span
+                  class="text-caption-bold font-caption-bold text-white pb-2"
+                  >F#</span
+                >
+              </div>
+              <div id="G#"
+                class="black-key flex h-40 w-12 flex-none flex-col items-center justify-end rounded-b-md ml-8 cursor-pointer bg-gradient-to-b from-[#1a1a1a] via-[#0a0a0a] to-[#000000] transition-all hover:from-[#2a2a2a] hover:via-[#1a1a1a] hover:to-[#0a0a0a] active:from-[#0a0a0a] active:via-[#050505] active:to-[#000000]"
+              >
+                <span
+                  class="text-caption-bold font-caption-bold text-white pb-2"
+                  >G#</span
+                >
+              </div>
+              <div id="A#"
+                class="black-key flex h-40 w-12 flex-none flex-col items-center justify-end rounded-b-md ml-8 cursor-pointer bg-gradient-to-b from-[#1a1a1a] via-[#0a0a0a] to-[#000000] transition-all hover:from-[#2a2a2a] hover:via-[#1a1a1a] hover:to-[#0a0a0a] active:from-[#0a0a0a] active:via-[#050505] active:to-[#000000]"
+              >
+                <span
+                  class="text-caption-bold font-caption-bold text-white pb-2"
+                  >A#</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
